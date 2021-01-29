@@ -11,6 +11,9 @@ function preloadScripts(lst){
         scriptCode += xhr.responseText + '\n';
     }
 }
+function done(){
+    if(main_ret == 0 || main_ret == 179){read_ptr_at(0);}
+}
 window.midExploit = function(){
 	preloadScripts(['702.js', 'jb_c-code.js', 'mira.js', 'hen.js', 'mira_c-code.js'], go);
 }
