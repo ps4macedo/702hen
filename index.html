@@ -1,11 +1,12 @@
 <html manifest="cache.manifest">
+<head><title>PS4MACEDO 7.02 LIGHT</title></head>
 <style>
 body{text-align:center;overflow:hidden;color: #49c179; background-image:url(bg1.png); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
 button{font-family: arial;font-size:14px;text-transform: uppercase;font-weight:700;border:2px solid #404040;border-radius: 4px;padding:10px;cursor: pointer;display:inline-block; text-decoration:none;background:transparent;color:#49c179;box-shadow:0 5px 0 #878787;}
 select{ -webkit-appearance:none; background:transparent; width:2px; height:2px; border:1px solid #000000;}
 </style>
 <body onload="invisivel();">
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'></h1>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
@@ -14,8 +15,8 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<fo
 <script>
 function invisivel(){
 	var appCache = window.applicationCache;
-	if(appCache.status !== 1 && appCache.status !== 2){
-		window.location.replace("hen.js");
+	if(appCache.status !== 3){
+		window.location.replace("hen.html");
 	}
 }
 </script>
