@@ -4,12 +4,12 @@ body{text-align:center;overflow:hidden;color: #49c179; background-image:url(bg1.
 button{font-family: arial;font-size:14px;text-transform: uppercase;font-weight:700;border:2px solid #404040;border-radius: 4px;padding:10px;cursor: pointer;display:inline-block; text-decoration:none;background:transparent;color:#49c179;box-shadow:0 5px 0 #878787;}
 select{ -webkit-appearance:none; background:transparent; width:2px; height:2px; border:1px solid #000000;}
 </style>
+<body onload="invisivel();">
+<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'></h1>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: <font color=\"#ee596f\">" + Percent + "%</font>";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="<font color=\"#6089f6\">Instalação na Cache Concluída! <font color=\"#ee596f\">Aguarde ...</font></font>";},1000);setTimeout(function(){window.msgs.innerHTML="Agora saia usando o <font color=\"#ee596f\">CIRCULO, desabilite a REDE e RETORNE ao navegador.</font>";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<body onload="invisivel();">
-<h1 id=msgs style='font-size:25px;text-align:center;color:#6089f6;'></h1>
 <script>
 function invisivel(){
 	var appCache = window.applicationCache;
