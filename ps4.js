@@ -116,6 +116,7 @@ function setupRW() {
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("[+] Succesfully got addrof/fakeobj");
 	debug_log("");
+	debug_log("");
 	debug_log("P R O N T O ! ! !");
 	debug_log("");
 	debug_log("Na mensagem de erro de memória, clique no botão \"PS\" para SAIR.");
@@ -416,6 +417,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
+	debug_log("");
 	debug_log("[+] Pulverizando elementos de área em HTML ...");
 
 	let textarea_div_elem = document.createElement("div");
