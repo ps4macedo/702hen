@@ -1,0 +1,43 @@
+<html>
+<style>
+body{text-align:center;overflow:hidden;color: #49c179; background-image:url(bg1.png); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+button{font-family: arial;font-size:14px;text-transform: uppercase;font-weight:700;border:2px solid #404040;border-radius: 4px;padding:10px;cursor: pointer;display:inline-block; text-decoration:none;background:transparent;color:#49c179;box-shadow:0 5px 0 #878787;}
+select{ -webkit-appearance:none; background:transparent; width:2px; height:2px; border:1px solid #000000;}
+</style>
+<body onload="go()">
+<script>
+function print(){}
+var scriptCode = '';
+function preloadScripts(lst){
+    for(var i = 0; i < lst.length; i++){
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
+}
+function done(){
+    if(main_ret == 0 || main_ret == 179){read_ptr_at(0);}
+}
+window.midExploit = function(){
+	preloadScripts(['702.js', 'jb_c-code.js', 'mira.js', 'hen.js', 'mira_c-code.js'], go);
+}
+window.postExploit = function(){
+    document.cookie = 'kex=0';
+    setTimeout(function(){
+        eval.call(window, scriptCode);
+		done();
+    }, 100);
+};
+</script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
+<button id="input1" onfocus="handle2()"></button>
+<button id="input2"></button>
+<button id="input3" onfocus="handle2()"></button>
+<select id="select1">
+	<option value="value1">Value1</option>
+</select>
+</body>
+</html>
