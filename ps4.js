@@ -109,7 +109,6 @@ function setupRW() {
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("");
 	debug_log("");
-	debug_log("");
 	debug_log("P R O N T O !!!");
 	debug_log("");
 	debug_log("Use o \"PS\" para sair.");
@@ -390,7 +389,6 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("");
 	debug_log("");
 	debug_log("I n i c i a n d o ...");
 
