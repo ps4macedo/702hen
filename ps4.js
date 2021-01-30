@@ -108,7 +108,6 @@ function setupRW() {
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
 	debug_log("");
-	debug_log("");
 	debug_log("P R O N T O !!!");
 	debug_log("");
 	debug_log("Use o \"PS\" para sair.");
